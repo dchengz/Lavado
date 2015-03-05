@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nexum.formlavadoapp.MainActivity" >
+
+    <TextView 
+		android:text="@string/activ_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/black"
+		android:textColor="@color/white"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:textStyle="bold"
+		android:paddingTop="12sp"
+		android:paddingBottom="12sp"
+		android:gravity="center" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10sp"
+		android:paddingBottom="10sp"
+		android:background="@drawable/border"
+        android:orientation="vertical" >
+	    <TextView 
+	        android:text="@string/activ_direc"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center" />
+	    <TextView android:id="@+id/tv_hora"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="15sp"
+	        android:textColor="@color/red"
+	        android:gravity="center" />
+	    <TextView android:id="@+id/tv_ticket"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="@color/red"
+	        android:paddingRight="8sp"
+	        android:gravity="end" />
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="10sp"
+		android:paddingBottom="10sp"
+		android:background="@drawable/border"
+	    android:orientation="vertical">	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        <TextView 
+		        android:text="@string/form_matr"
+		        android:layout_gravity="start"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textAppearance="?android:attr/textAppearanceLarge"
+		        android:minWidth="140sp"
+		        android:gravity="start" />
+	        <EditText android:id="@+id/et_matricula"
+	            android:inputType="text"
+		        android:layout_gravity="end"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="start" />
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        <TextView 
+		        android:text="@string/form_clie"
+		        android:layout_gravity="start"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textAppearance="?android:attr/textAppearanceLarge"
+		        android:minWidth="140sp"
+		        android:gravity="start" />
+	        <EditText android:id="@+id/et_cliente"
+	            android:inputType="text"
+		        android:layout_gravity="end"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="start" />
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        <TextView 
+		        android:text="@string/form_telf"
+		        android:layout_gravity="start"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textAppearance="?android:attr/textAppearanceLarge"
+		        android:minWidth="140sp"
+		        android:gravity="start" />
+	        <EditText android:id="@+id/et_telf"
+	            android:inputType="text"
+		        android:layout_gravity="end"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="start" />
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        <TextView 
+		        android:text="@string/form_tipo"
+		        android:layout_gravity="start"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textAppearance="?android:attr/textAppearanceLarge"
+		        android:minWidth="140sp"
+		        android:gravity="start" />
+	        <RadioGroup android:id="@+id/rg_tipo"
+	            android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:orientation="horizontal" >
+	            <RadioButton android:id="@+id/rb_small"
+		            android:layout_width="wrap_content"	
+				    android:layout_height="wrap_content"
+				    android:text="@string/rbt_small"
+				    android:onClick="onRadioButtonClicked" />
+	            <RadioButton android:id="@+id/rb_big"
+		            android:layout_width="wrap_content"	
+				    android:layout_height="wrap_content"
+				    android:text="@string/rbt_big"
+				    android:onClick="onRadioButtonClicked" />
+	            <RadioButton android:id="@+id/rb_4x4"
+		            android:layout_width="wrap_content"	
+				    android:layout_height="wrap_content"
+				    android:text="@string/rbt_4x4"
+				    android:onClick="onRadioButtonClicked" />
+	        </RadioGroup>
+	    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12sp"
+		android:paddingBottom="12sp"
+        android:background="@drawable/border"
+        android:orientation="horizontal" >
+        <TextView 
+	        android:text="@string/form_total"
+	        android:layout_gravity="start"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.3"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:gravity="center" />
+        <TextView android:id="@+id/tv_amount"
+	        android:layout_gravity="end"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:layout_weight="0.7"
+	        android:gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:paddingTop="15sp"
+		android:paddingBottom="15sp"
+        android:orientation="vertical" >
+	    <TextView 
+	        android:text="@string/activ_numero"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textStyle="bold"
+	        android:textSize="20sp"
+	        android:gravity="center" />
+	    <TextView 
+	        android:text="@string/activ_gracias"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textStyle="bold"
+	        android:textSize="16sp"
+	        android:gravity="center" />
+    </LinearLayout>
+</LinearLayout>

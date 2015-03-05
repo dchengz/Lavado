@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FormLavadoApp</string>
+    <string name="activ_title">LAVADO DE COCHES ECOLOGICOS</string>
+    <string name="activ_direc">Parque Empresarial Alvia - Las Rozas Madrid</string>
+    
+    <string name="action_settings">Settings</string>
+    <string name="action_print">Imprimir</string>
+    <string name="action_update">Autocompletar</string>
+    <string name="action_getTicket">Generar Ticket</string>
+    
+    <string name="form_matr">Matrícula: </string>
+    <string name="form_clie">Cliente: </string>
+    <string name="form_telf">Telf: </string>
+    <string name="form_tipo">Tipo Lavado: </string>
+    <string name="form_total">TOTAL</string>
+    <string name="activ_numero">652&#8211;724&#8211;419</string>
+	<string name="activ_gracias">Gracias por su preferencia</string>
+	
+	<string name="rbt_small">Peq.</string>
+	<string name="rbt_big">Grand</string>
+	<string name="rbt_4x4">4x4</string>
+
+</resources>
